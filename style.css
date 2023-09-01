@@ -20,6 +20,8 @@ button {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
@@ -32,6 +34,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
 }
+
+.footer{
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  cursor: pointer;
+}
+
+.icon-edit{
+  width: 30px;
+}
+
+.icon-edit:hover{
+  background-color: #5b7065;
+}
+.icon-borrar{
+  width: 30px;
+}
+
+.icon-borrar:hover{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.button-edit {
+  border: none;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  /* float: right; */
+}
+
+.button-borrar {
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
 
 :focus {
   outline: 0;
@@ -101,13 +141,14 @@ body {
 }
 
 .main {
+  margin-bottom: 20px;
   position: relative;
   z-index: 2;
   border-top: 1px solid #e6e6e6;
 }
 
 .todo-list {
-  margin: 0;
+
   padding: 0;
   list-style: none;
 }
